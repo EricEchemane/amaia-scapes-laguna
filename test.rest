@@ -1,6 +1,6 @@
 
 ### register
-post http://localhost:80/api/register
+post http://localhost:80/api/registration
 Content-Type: application/json
 
 {

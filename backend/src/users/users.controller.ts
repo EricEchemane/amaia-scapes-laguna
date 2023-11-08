@@ -21,7 +21,7 @@ export class UsersController {
     private authService: AuthService,
   ) {}
 
-  @Post('register')
+  @Post('registration')
   register(@Body() newUser: RegisterUserDto) {
     return this.usersService.register(newUser);
   }

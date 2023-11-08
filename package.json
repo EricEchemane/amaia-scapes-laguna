@@ -1,0 +1,17 @@
+{
+  "name": "amaia-scapes-laguna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eric EChemane",
+  "license": "MIT",
+  "scripts": {
+    "be": "cd backend && yarn start",
+    "fe:dev": "cd frontend && yarn dev",
+    "fe:prod": "cd frontend && yarn build && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"yarn be\" \"yarn fe:dev\"",
+    "prod": "concurrently --kill-others-on-fail \"yarn be\" \"yarn fe:prod\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

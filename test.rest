@@ -1,3 +1,5 @@
+
+### register
 post http://localhost:80/api/register
 Content-Type: application/json
 
@@ -6,3 +8,20 @@ Content-Type: application/json
   "lastName": "Doe",
   "password": "pasword123"
 }
+
+### login
+post http://localhost:80/api/login
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "password": "pasword123"
+}
+
+### proteced route example - Unauthorized
+get http://localhost:80/api/users
+
+### proteced route example - Authorized - change token below with the one you get from login
+get http://localhost:80/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbG9wY3Vma2IwMDAwazk1Z3V0Y2dha25uIiwiZmlyc3ROYW1lIjoiSm9obiIsImxhc3ROYW1lIjoiRG9lIiwiaWF0IjoxNjk5NDIzNTM0fQ.27IKv9UH-Y69Jf0JSi0NaIfaRRpUgPvxPrbNxhTpO_o

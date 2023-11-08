@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 126 102;
+    --color-secondary: 29 52 97;
+  }
+}
+
+body {
+  @apply prose prose-neutral max-w-full;
+}
